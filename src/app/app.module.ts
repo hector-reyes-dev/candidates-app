@@ -7,6 +7,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CandidateComponent } from './components/candidate/candidate.component';
+import { CandidatesComponent } from './components/candidates/candidates.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     LayoutComponent,
     HomeComponent,
     ProfileComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CandidateComponent,
+    CandidatesComponent
   ],
   imports: [
     BrowserModule,
