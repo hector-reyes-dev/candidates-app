@@ -1,0 +1,19 @@
+.candidate-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+
+  h3 {
+    margin-block-start: 0;
+    margin-block-end: 0.25rem;
+  }
+
+  p {
+    display: inline;
+    margin-inline-end: 1rem;
+  }
+}
