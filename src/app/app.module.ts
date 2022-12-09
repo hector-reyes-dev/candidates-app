@@ -10,6 +10,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CandidateComponent } from './components/candidate/candidate.component';
 import { CandidatesComponent } from './components/candidates/candidates.component';
 import { HeaderComponent } from './components/header/header.component';
+import { DataFieldComponent } from './components/data-field/data-field.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,11 @@ import { HeaderComponent } from './components/header/header.component';
     NotFoundComponent,
     CandidateComponent,
     CandidatesComponent,
-    HeaderComponent
+    HeaderComponent,
+    DataFieldComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
