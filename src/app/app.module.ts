@@ -13,6 +13,9 @@ import { CandidatesComponent } from './components/candidates/candidates.componen
 import { HeaderComponent } from './components/header/header.component';
 import { DataFieldComponent } from './components/data-field/data-field.component';
 import { SkillsFormComponent } from './components/skills-form/skills-form.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,7 @@ import { SkillsFormComponent } from './components/skills-form/skills-form.compon
     DataFieldComponent,
     SkillsFormComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
+  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule, provideFirebaseApp(() => initializeApp(environment.firebase)), provideFirestore(() => getFirestore())],
   providers: [],
   bootstrap: [AppComponent],
 })
