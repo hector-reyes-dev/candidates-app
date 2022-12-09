@@ -9,6 +9,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CandidateComponent } from './components/candidate/candidate.component';
 import { CandidatesComponent } from './components/candidates/candidates.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CandidatesComponent } from './components/candidates/candidates.componen
     ProfileComponent,
     NotFoundComponent,
     CandidateComponent,
-    CandidatesComponent
+    CandidatesComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
