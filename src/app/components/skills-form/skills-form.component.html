@@ -1,0 +1,11 @@
+<section>
+  <h4>Skills</h4>
+  <form [formGroup]="skillsForm">
+    <div formArrayName="skills">
+      <div *ngFor="let skill of skillsArr.controls; let i = index">
+        <input type="checkbox" [formControlName]="i" />
+        <label> {{ skill.value }} </label>
+      </div>
+    </div>
+  </form>
+</section>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { CandidateComponent } from './components/candidate/candidate.component';
 import { CandidatesComponent } from './components/candidates/candidates.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DataFieldComponent } from './components/data-field/data-field.component';
+import { SkillsFormComponent } from './components/skills-form/skills-form.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,9 @@ import { DataFieldComponent } from './components/data-field/data-field.component
     CandidatesComponent,
     HeaderComponent,
     DataFieldComponent,
+    SkillsFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
