@@ -5,20 +5,32 @@ const candidatesMock: Candidate[] = [
   {
     id: 1,
     name: 'Carol Martínez',
-    'interview-date': '01/11/21',
-    skills: ['angular', 'ui'],
+    'interview-date': new Date(),
+    skills: {
+      Angular: true,
+      JavaScript: false,
+      Microservicios: false,
+    },
   },
   {
     id: 2,
     name: 'Juan Bautista',
-    'interview-date': '08/12/22',
-    skills: ['react', 'express'],
+    'interview-date': new Date(),
+    skills: {
+      Angular: false,
+      JavaScript: true,
+      Microservicios: false,
+    },
   },
   {
     id: 3,
     name: 'Gerardo Reyes',
-    'interview-date': '24/04/23',
-    skills: ['marketing', 'fullstack'],
+    'interview-date': new Date(),
+    skills: {
+      Angular: false,
+      JavaScript: false,
+      Microservicios: true,
+    },
   },
 ];
 

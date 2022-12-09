@@ -1,7 +1,7 @@
 <article class="candidate-info">
   <div>
     <h3>{{ candidate.name }}</h3>
-    <p *ngFor="let skill of candidate.skills">{{ skill }}</p>
+    <p *ngFor="let skill of candidateSkills">{{ skill }}</p>
   </div>
   <a [routerLink]="['/candidate', candidate.id]">
     <button>Candidate Detail</button>
