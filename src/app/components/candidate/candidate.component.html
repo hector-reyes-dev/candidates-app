@@ -3,5 +3,7 @@
     <h3>{{ candidate.name }}</h3>
     <p *ngFor="let skill of candidate.skills">{{ skill }}</p>
   </div>
-  <button>Candidate Detail</button>
+  <a [routerLink]="['/candidate', candidate.id]">
+    <button>Candidate Detail</button>
+  </a>
 </article>

@@ -11,7 +11,7 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', pathMatch: 'full', component: HomeComponent },
-      { path: 'profile/:id', component: ProfileComponent },
+      { path: 'candidate/:id', component: ProfileComponent },
       { path: '**', component: NotFoundComponent },
     ],
   },
