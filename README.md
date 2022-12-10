@@ -1,27 +1,48 @@
 # CandidatesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+Technical
+
+### Deploy
+[Launch!](https://app-candidates-9878b.web.app/)
+
+## Project Links 🔗
+
+- [Notion](https://hectordevx.notion.site/Candidates-App-537447288ece4fc99d2374e0c7a9d2a7) - Documentation (ES)
+- [Figma Design](https://www.figma.com/file/ZpfXQZAKHricHi2S1JwLwo/Candidates-App?node-id=2%3A1187&t=gNQGW5If0VLf4LOm-1) - UI Design
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Build with 🛠️
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The tools used for made this project.
 
-## Running end-to-end tests
+- [Angular](https://angular.io/) - Frontend.
+- [Firebase](https://firebase.google.com/?hl=es) - Backend.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contribute 🖇️
 
-## Further help
+Feel free for contribute to this project using Pull Request.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author ✒️
+
+- **Héctor Reyes** - _Design and development_ - [HéctorDevx](https://github.com/hector-reyes-dev)
+
+## Licence 📄
+
+This project has the MIT Licence - consult the [LICENSE.md](LICENSE.md) archive for details.
+
+## Thanks 🎁
+
+- Share with others this project 📢
+- Invite me a taco 🌮 or don't forget to star this project ⭐.
+- Taco: [Taco](https://www.paypal.me/HReyes117)
+
+---
+
+Build with 💚 by [HéctorDevx](https://github.com/HectorDevx) 😊
