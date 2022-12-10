@@ -1,7 +1,10 @@
-<article class="candidate-info">
-  <div>
-    <h3>{{ candidate.name }}</h3>
-    <p *ngFor="let skill of candidateSkills">{{ skill }}</p>
+<article class="candidate-container">
+  <div class="candidate-info">
+    <img src="../../../assets/images/avatar.png" alt="Avatar Image" />
+    <div>
+      <h3>{{ candidate.name }}</h3>
+      <span *ngFor="let skill of candidateSkills">| {{ skill }}</span>
+    </div>
   </div>
   <a [routerLink]="['/candidate', candidate.id]">
     <button>Candidate Detail</button>
