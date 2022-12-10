@@ -3,16 +3,20 @@
   <form [formGroup]="skillsForm" (ngSubmit)="onSubmit()">
     <div class="form-container">
       <div class="checkbox-input">
-        <input type="checkbox" formControlName="Angular" />
+        <input type="checkbox" id="angular" formControlName="Angular" />
         <label for="angular"> Angular </label>
       </div>
       <div class="checkbox-input">
-        <input type="checkbox" formControlName="JavaScript" />
-        <label for="angular"> JavaScript </label>
+        <input type="checkbox" id="javascript" formControlName="JavaScript" />
+        <label for="javascript"> JavaScript </label>
       </div>
       <div class="checkbox-input">
-        <input type="checkbox" formControlName="Microservicios" />
-        <label for="angular"> Microservicios </label>
+        <input
+          type="checkbox"
+          id="microservicios"
+          formControlName="Microservicios"
+        />
+        <label for="microservicios"> Microservicios </label>
       </div>
     </div>
     <button>Save Candidate</button>
