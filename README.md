@@ -1,6 +1,6 @@
 # CandidatesApp
 
-Technical
+Technical test. Creation of an app for candidates and skills.
 
 ### Deploy
 [Launch!](https://app-candidates-9878b.web.app/)
