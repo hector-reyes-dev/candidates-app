@@ -1,0 +1,45 @@
+.not-fount-container {
+  margin-block-start: 4rem;
+  display: flex;
+  gap: 4rem;
+  place-content: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .not-fount-number {
+    margin-block: 1rem;
+    font-size: 7.5rem;
+    line-height: 7, 5rem;
+    font-weight: 700;
+    color: var(--accent);
+
+    h1 {
+      margin-block: 0.5rem;
+    }
+  }
+
+  img {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .not-fount-container {
+    margin-block-start: 2rem;
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  div {
+    text-align: center;
+    align-items: center;
+  }
+}
