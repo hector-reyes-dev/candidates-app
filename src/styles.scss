@@ -1,6 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --accent: #0d6ee0;
+  --light-accent: #e7f1fc;
+  --text-black: #050a10;
+  --text-gray: #8090a1;
+  --bg-white: #ffffff;
+  --bg-gray: #edeff3;
+}
+
+h1 {
+  margin-block-end: 0.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: var(--text-black);
+}
+
+h2 {
+  margin-block-end: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--text-black);
+}
+
+h3 {
+  margin-block-end: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--text-black);
+}
+
+h4 {
+  margin-block-end: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--text-black);
+}
+
+p {
+  margin-block: 0.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: var(--text-gray);
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+span {
+  margin-block-start: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: var(--text-gray);
+}
+
+button {
+  margin: 0;
+  padding: 1rem 2rem;
+  background: var(--accent);
+  box-shadow: 0px 4px 10px rgba(13, 110, 224, 0.25);
+  border: none;
+  border-radius: 0.8rem;
+  color: var(--bg-white);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1rem;
+
+  &:hover {
+    color: var(--accent);
+    background: var(--light-accent);
+    box-shadow: none;
+    outline: 1px solid var(--accent);
+  }
+}
+
 body {
-  max-width: 80vw;
+  max-width: 60vw;
   margin: 0 auto;
   padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  body {
+    max-width: 100vw;
+    padding: 1rem;
+  }
 }
