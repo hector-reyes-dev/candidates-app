@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./data-field.component.scss'],
 })
 export class DataFieldComponent {
-  @Input() value: string = '';
+  @Input() value: any = '';
   @Input() fieldName: string = '';
 
   constructor() {}

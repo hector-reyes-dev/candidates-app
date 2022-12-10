@@ -1,21 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { CandidateService } from 'src/app/services/candidate.service';
 
 @Component({
   selector: 'app-skills-form',
   templateUrl: './skills-form.component.html',
   styleUrls: ['./skills-form.component.scss'],
 })
-export class SkillsFormComponent implements OnInit {
+export class SkillsFormComponent implements OnChanges {
+  @Input() candidateId: string = '';
+  @Input() candidateSkills: any = {};
+
   skillsForm: FormGroup = this.fb.group({
-    skills: this.fb.array([['Angular'], ['JS']]),
+    Angular: [false],
+    JavaScript: [false],
+    Microservicios: [false],
   });
 
-  get skillsArr() {
-    return this.skillsForm.get('skills') as FormArray;
+  get skillsList() {
+    return Object.keys(this.candidateSkills);
   }
 
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private candidatesService: CandidateService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes && this.candidateSkills) {
+      this.skillsForm.reset(this.candidateSkills);
+    }
+  }
+
+  onSubmit() {
+    this.candidatesService.updateCandidateSkills(
+      this.candidateId,
+      this.skillsForm.value
+    );
+  }
 }

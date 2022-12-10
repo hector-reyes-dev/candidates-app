@@ -1,8 +1,11 @@
 <section>
-  <app-data-field fieldName="Name" value="Carol Martínez"></app-data-field>
+  <app-data-field fieldName="Name" [value]="candidate?.name"></app-data-field>
   <app-data-field
     fieldName="Interview Date"
-    value="08/12/2022"
+    [value]="candidate?.['interview-date']"
   ></app-data-field>
-  <app-skills-form></app-skills-form>
+  <app-skills-form
+    [candidateId]="candidateId || ''"
+    [candidateSkills]="candidate?.skills"
+  ></app-skills-form>
 </section>

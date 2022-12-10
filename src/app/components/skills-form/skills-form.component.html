@@ -1,11 +1,18 @@
 <section>
   <h4>Skills</h4>
-  <form [formGroup]="skillsForm">
-    <div formArrayName="skills">
-      <div *ngFor="let skill of skillsArr.controls; let i = index">
-        <input type="checkbox" [formControlName]="i" />
-        <label> {{ skill.value }} </label>
-      </div>
+  <form [formGroup]="skillsForm" (ngSubmit)="onSubmit()">
+    <div class="checkbox-input">
+      <input type="checkbox" formControlName="Angular" />
+      <label for="angular"> Angular </label>
     </div>
+    <div class="checkbox-input">
+      <input type="checkbox" formControlName="JavaScript" />
+      <label for="angular"> JavaScript </label>
+    </div>
+    <div class="checkbox-input">
+      <input type="checkbox" formControlName="Microservicios" />
+      <label for="angular"> Microservicios </label>
+    </div>
+    <button>Save Candidate</button>
   </form>
 </section>
