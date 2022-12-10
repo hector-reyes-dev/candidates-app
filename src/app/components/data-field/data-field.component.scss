@@ -1,3 +1,20 @@
+h2 {
+  margin-block: 0;
+  color: var(--text-black);
+}
+
+h4 {
+  margin-inline-end: 0.25rem;
+  color: var(--text-gray);
+}
+
 hr {
-  width: 25rem;
+  width: 20rem;
+  border-block-start: 1px solid var(--accent);
+}
+
+@media (max-width: 660px) {
+  hr {
+    width: 90vw;
+  }
 }

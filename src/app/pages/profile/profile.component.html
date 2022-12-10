@@ -1,9 +1,11 @@
 <section>
-  <app-data-field fieldName="Name" [value]="candidate?.name"></app-data-field>
-  <app-data-field
-    fieldName="Interview Date"
-    [value]="candidate?.['interview-date']"
-  ></app-data-field>
+  <div class="data-container">
+    <app-data-field fieldName="Name" [value]="candidate?.name"></app-data-field>
+    <app-data-field
+      fieldName="Interview Date"
+      [value]="candidate?.['interview-date']"
+    ></app-data-field>
+  </div>
   <app-skills-form
     [candidateId]="candidateId || ''"
     [candidateSkills]="candidate?.skills"

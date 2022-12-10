@@ -1,0 +1,16 @@
+section {
+  margin-block-start: 3rem;
+}
+
+.data-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 660px) {
+  section {
+    margin-block-start: 1rem;
+  }
+}
